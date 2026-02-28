@@ -1,0 +1,7 @@
+services:
+  remove-audio:
+    build: .
+    volumes:
+      - ./:/videos
+    working_dir: /videos
+    entrypoint: ["python", "/app/remove_audio.py"]
