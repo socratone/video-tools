@@ -7,12 +7,6 @@ Docker 기반 비디오 처리 CLI 도구 모음
 - Docker
 - Docker Compose
 
-## 설치
-
-```bash
-docker compose build
-```
-
 ## 기능
 
 ### 오디오 제거 (remove-audio)
