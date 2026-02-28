@@ -2,6 +2,8 @@ services:
   remove-audio:
     build: .
     volumes:
+      # 호스트의 현재 디렉토리(./)를 컨테이너의 /videos에 마운트
+      # 이를 통해 로컬 비디오 파일을 컨테이너에서 접근/수정 가능
       - ./:/videos
     working_dir: /videos
     entrypoint: ["python", "/app/remove_audio.py"]
