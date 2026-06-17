@@ -7,3 +7,10 @@ services:
       - ./:/videos
     working_dir: /videos
     entrypoint: ["python", "/app/remove_audio.py"]
+
+  extract-poster:
+    build: .
+    volumes:
+      - ./:/videos
+    working_dir: /videos
+    entrypoint: ["python", "/app/extract_poster.py"]
